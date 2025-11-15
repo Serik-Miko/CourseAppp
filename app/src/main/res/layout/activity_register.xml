@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тіркелу"
+            android:textColor="#E6F7FF"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:paddingLeft="16dp"
+            android:hint="Логин"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88D9FF"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:paddingLeft="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88D9FF"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_bg"
+            android:paddingLeft="16dp"
+            android:hint="Пароль"
+            android:inputType="textVisiblePassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88D9FF"
+
+            />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_neon"
+            android:text="Тіркелу"
+            android:textColor="#001026"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvGoLogin"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кіру бетіне оралу"
+            android:textColor="#7FE0FF"/>
+
+    </LinearLayout>
+</ScrollView>

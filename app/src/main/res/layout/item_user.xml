@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/course_card_bg"
+        android:padding="16dp">
+
+        <!-- ✅ ПРОФИЛЬ СУРЕТІ (ЖАҢА) -->
+        <ImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:scaleType="centerCrop"
+            android:background="@drawable/input_bg"
+            android:padding="4dp"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Қолданушы аты -->
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Қолданушы аты"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email@example.com"
+                android:textColor="#B3FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp" />
+
+            <!-- Рөл және статус -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tvRole"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🏷️ Рөл"
+                    android:textSize="10sp"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="2dp" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="✅ Статус"
+                    android:textSize="10sp"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="2dp" />
+
+            </LinearLayout>
+
+            <!-- Тіркелу күні және курс саны -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8px">
+
+                <TextView
+                    android:id="@+id/tvRegistrationDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Тіркелген: 01.01.2024"
+                    android:textColor="#88D9FF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvPurchasedCourses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 курс"
+                    android:textColor="#FFD700"
+                    android:textSize="10sp"
+                    android:background="#4000E0FF"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="2dp"
+                    android:radius="8dp" />
+
+            </LinearLayout>
+
+            <!-- Әрекеттер батырмасы -->
+            <Button
+                android:id="@+id/btnActions"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="Әрекеттер"
+                android:textColor="#001026"
+                android:textSize="11sp"
+                android:background="@drawable/btn_neon"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

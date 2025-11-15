@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/dialogContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_background"
+        android:padding="24dp">
+
+        <!-- Жабу батырмасы -->
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tint="#FFFFFF"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <!-- Курс суреті -->
+        <ImageView
+            android:id="@+id/courseImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_gradient"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginTop="8dp" />
+
+        <!-- Курс атауы -->
+        <TextView
+            android:id="@+id/courseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Курс атауы"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Оқытушы -->
+        <TextView
+            android:id="@+id/courseInstructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Оқытушы"
+            android:textColor="#B3FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Рейтинг -->
+        <TextView
+            android:id="@+id/courseRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⭐ 4.9 (148 пікір)"
+            android:textColor="#FFD700"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Ұзақтығы -->
+        <TextView
+            android:id="@+id/courseDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ұзақтығы"
+            android:textColor="#B3FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Сипаттама -->
+        <TextView
+            android:id="@+id/courseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сипаттама"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Мүмкіндіктер -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мүмкіндіктер:"
+            android:textColor="#00E0FF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/featuresList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <!-- Баға -->
+        <TextView
+            android:id="@+id/coursePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25 000 ₸"
+            android:textColor="#00E0FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+
+        <!-- Батырмалар -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Бөлісу"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_outline" />
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:layout_marginStart="8dp"
+                android:text="Сатып алу"
+                android:textColor="#001026"
+                android:textStyle="bold"
+                android:background="@drawable/btn_neon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

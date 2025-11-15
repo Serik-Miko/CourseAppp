@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Төлем"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Тапсырыс ақпараты -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тапсырыс ақпараты"
+            android:textColor="#00E0FF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#2000E0FF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvOrderSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Курс саны: 2\nЖалпы баға: 60,000 ₸"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- ProgressBar қосу -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_margin="16dp" />
+
+        <!-- Төлем әдісі -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Төлем әдісі"
+            android:textColor="#00E0FF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Банк картасы"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#00E0FF" />
+
+            <RadioButton
+                android:id="@+id/radioKaspi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kaspi QR"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#00E0FF" />
+
+            <!-- Қолма-қол ақша алып тасталды -->
+
+        </RadioGroup>
+
+        <!-- Карта мәліметтері -->
+        <LinearLayout
+            android:id="@+id/layoutCardInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#88D9FF"
+                android:hint="Карта нөмірі (0000 0000 0000 0000)"
+                android:inputType="number"
+                android:maxLength="19"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/etExpiryDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/input_bg"
+                    android:padding="12dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#88D9FF"
+                    android:hint="Мерзімі (АА/ЖЖ)"
+                    android:inputType="number"
+                    android:maxLength="5" />
+
+                <EditText
+                    android:id="@+id/etCVV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/input_bg"
+                    android:padding="12dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#88D9FF"
+                    android:hint="CVV"
+                    android:inputType="numberPassword"
+                    android:maxLength="3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Төлем батырмасы -->
+        <Button
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Қазір төлеу"
+            android:textColor="#001026"
+            android:textStyle="bold"
+            android:background="@drawable/btn_neon"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Бас тарту"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_outline"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
